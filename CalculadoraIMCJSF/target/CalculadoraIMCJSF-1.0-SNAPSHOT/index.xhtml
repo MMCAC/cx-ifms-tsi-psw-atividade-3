@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Calculadora de IMC</title>
+</h:head>
+<h:body>
+    <h1>Calcular IMC</h1>
+    <h:form>
+        <h:outputLabel value="Peso (kg): " for="peso"/>
+        <h:inputText id="peso" value="#{imcBean.peso}" /><br/><br/>
+
+        <h:outputLabel value="Altura (m): " for="altura"/>
+        <h:inputText id="altura" value="#{imcBean.altura}" /><br/><br/>
+
+        <h:commandButton value="Calcular" action="#{imcBean.calcular}" />
+    </h:form>
+</h:body>
+</html>
